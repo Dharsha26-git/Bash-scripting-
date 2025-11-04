@@ -55,10 +55,17 @@ TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
  
 echo "==================== HEALTH CHECK REPORT ====================" >> $LOGFILE
+
 echo "Timestamp: $TIMESTAMP" >> $LOGFILE
+          
 echo "--------------------------------------------------------------" >> $LOGFILE
  
+2. Make the Script Executable
+Open the terminal in VS Code (Ctrl + ~) and run:
 
+bash
+Copy code
+chmod +x healthcheck.sh
 echo "System Date & Time: $(date)" >> $LOGFILE
 
 echo "--------------------------------------------------------------" >> $LOGFILE
