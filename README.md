@@ -110,5 +110,9 @@ echo "-------------------------------------------------------------" >> $LOGFILE
 Open the terminal in VS Code (Ctrl + ~) and run:
 
 bash
+
 Copy code
+
 chmod +x healthcheck.sh
+
+
