@@ -134,6 +134,9 @@ bash:
 
 ✅ Health check completed. Log saved to healthlog.txt
 
+4. View the Log File:
+
+📊 Sample healthlog.txt Output:
 
 ==================== HEALTH CHECK REPORT ====================
 
@@ -190,6 +193,8 @@ Code.exe                     309407744
 chrome.exe                   428580864       
 
 msedgewebview2.exe           504479744       
+
+
 
 
 
