@@ -21,11 +21,13 @@ This script is useful for system administrators, DevOps engineers, or anyone who
 📂 Project Structure:
 
 SystemHealthCheck/ │ 
+
 ├── healthcheck.sh # Main Bash script 
+
 ├── healthlog.txt # Output log file (auto-generated) 
+
 └── README.md # Project documentation
 
-bash Copy code
 
 ⚙️ Prerequisites:
 
@@ -50,6 +52,7 @@ Make sure you have this script in your workspace as healthcheck.sh:
 #!/bin/bash
  
 LOGFILE="healthlog.txt"
+
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
 
@@ -90,18 +93,23 @@ echo "CPU Load (1, 5, 15 min): $(cut -d ' ' -f 1-3 /proc/loadavg)" >> $LOGFILE
 echo "--------------------------------------------------------------" >> $LOGFILE
 
 echo -e "\nDisk Usage:" >> $LOGFILE
+
 df -h >> $LOGFILE
+
 echo "" >> $LOGFILE
 
 echo "--------------------------------------------------------------" >> $LOGFILE
 
 echo -e "\nService Status:" >> $LOGFILE
+
 sc query sshd > /dev/null 2>&1 && echo "SSH: Running " || echo "SSH: Not Running " >> $LOGFILE
+
 sc query nginx > /dev/null 2>&1 && echo "Nginx: Running " || echo "Nginx: Not Running " >> $LOGFILE
 
 echo "--------------------------------------------------------------" >> $LOGFILE
 
 echo -e "\nTop 5 Memory Consuming Processes:" >> $LOGFILE
+
 wmic process get Name,WorkingSetSize | sort -k2 -n | tail -n 5 >> $LOGFILE
 
 echo "-------------------------------------------------------------" >> $LOGFILE
@@ -120,6 +128,12 @@ chmod +x healthcheck.sh
 bash:
 
 ./healthcheck.sh
+
+✅ Output:
+
+
+✅ Health check completed. Log saved to healthlog.txt
+
 
 ==================== HEALTH CHECK REPORT ====================
 
