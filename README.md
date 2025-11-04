@@ -192,15 +192,15 @@ Nginx: Not Running
 
 Top 5 Memory Consuming Processes:
 
-chrome.exe                   250081280       
+chrome.exe                             250081280       
 
-explorer.exe                 269328384       
+explorer.exe                           269328384       
 
-Code.exe                     309407744       
+Code.exe                               309407744       
 
-chrome.exe                   428580864       
+chrome.exe                             428580864       
 
-msedgewebview2.exe           504479744       
+msedgewebview2.exe                     504479744       
 
 
 
