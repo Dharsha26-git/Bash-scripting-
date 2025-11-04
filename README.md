@@ -40,3 +40,10 @@ ps
 awk
 systemctl (for checking service status)
 
+🧑‍💻 How to Run the Project in VS Code:
+
+1. Create and Save the Script:
+
+Make sure you have this script in your workspace as healthcheck.sh:
+
+
