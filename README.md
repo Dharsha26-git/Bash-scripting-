@@ -75,13 +75,21 @@ echo "System Uptime: $uptime_formatted" >> $LOGFILE
 echo "--------------------------------------------------------------" >> $LOGFILE
 
 echo "Memory Usage (MB):" >> $LOGFILE
+
 total_mem=$(grep MemTotal /proc/meminfo | awk '{print $2}') >> $LOGFILE
+
 free_mem=$(grep MemAvailable /proc/meminfo | awk '{print $2}') >> $LOGFILE
+
 total_mem_mb=$((total_mem / 1024)) >> $LOGFILE
+
 free_mem_mb=$((free_mem / 1024)) >> $LOGFILE
+
 used_mem_mb=$((total_mem_mb - free_mem_mb)) >> $LOGFILE
+
 echo "Total: ${total_mem_mb} MB" >> $LOGFILE
+
 echo "Used: ${used_mem_mb} MB" >> $LOGFILE
+
 echo "Free: ${free_mem_mb} MB" >> $LOGFILE
 
 
