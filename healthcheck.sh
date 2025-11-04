@@ -52,3 +52,6 @@ echo "--------------------------------------------------------------" >> $LOGFIL
 
 echo -e "\nTop 5 Memory Consuming Processes:" >> $LOGFILE
 wmic process get Name,WorkingSetSize | sort -k2 -n | tail -n 5 >> $LOGFILE
+
+echo "-------------------------------------------------------------" >> $LOGFILE
+
