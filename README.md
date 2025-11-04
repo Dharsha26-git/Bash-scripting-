@@ -106,7 +106,9 @@ wmic process get Name,WorkingSetSize | sort -k2 -n | tail -n 5 >> $LOGFILE
 
 echo "-------------------------------------------------------------" >> $LOGFILE
 
-2. Make the Script Executable
+2. Make the Script Executable:
+
+   
 Open the terminal in VS Code (Ctrl + ~) and run:
 
 bash
