@@ -162,6 +162,7 @@ Service Status:
 SSH: Not Running 
 
 Nginx: Not Running 
+
 --------------------------------------------------------------
 
 Top 5 Memory Consuming Processes:
